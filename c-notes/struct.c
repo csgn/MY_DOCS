@@ -12,7 +12,8 @@ typedef struct {
 	gender c;
 } human;
 
-int retStatus(human *person) {
+int 
+retStatus(human *person) {
 	if (person-> c == man && person->age > 55)
 		return 1;
 	if (person-> c == woman && person->age > 50)
@@ -20,7 +21,8 @@ int retStatus(human *person) {
 	return 0;
 }
 
-int main() {
+int 
+main() {
 	human sergen;
 	sergen.age = 18;
 	sergen.c = man;
