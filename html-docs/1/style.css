@@ -1,0 +1,100 @@
+
+
+body {
+    background-image: url("evl.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: scroll;
+}
+
+p.left-border {
+    background-color: rgb(154, 192, 241);
+    color: rgb(46, 46, 46);
+    border-left: 5px rgb(54, 136, 243) solid;
+    padding-left: 2px;
+}
+
+div.main {
+    border: 1px black solid;
+    width: 200px;
+    height: 200px;
+    text-align: justify;
+    text-indent: 50px;
+
+}
+
+div.main a {
+    text-decoration: none;
+}
+
+h1#text-shadow {
+    text-shadow: 3px 2px red;
+}
+
+a#my-link {
+    color: black;
+}
+a#my-link:link {
+    color: red;
+}
+
+a#my-link:visited {
+    color: green;
+}
+
+a#my-link:hover {
+    color: orange;
+}
+
+a#my-link:active {
+    color: cyan;
+}
+
+
+a.my-btn:link, a.my-btn:visited {
+    background-color: rgb(224, 75, 75);
+    color: rgb(255, 255, 255);
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a.my-btn:hover, a.my-btn:active {
+    background-color: rgb(196, 56, 56);
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    height: 50px;
+    text-align: left;
+}
+
+th, td {
+    padding: 15px;
+    text-aling: left;
+}
+
+table, th, td {
+    border: 1px rgb(46, 46, 46) solid;
+}
+
+
+ul li {
+    display: inline; /* block */
+}
+
+
+div.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: rgb(224, 75, 75);
+    border: 2px solid rgb(46, 46, 46);
+    color: rgb(255, 255, 255);
+}

@@ -1,0 +1,125 @@
+.shape {
+  width: 15px;
+  height: 15px;
+  background: #555;
+  margin: 10px 0 0 0;
+}
+.shape-ts {
+  transition: width 1s, height 1s; 
+}
+.shape-ts:hover {
+  width: 30px;
+  height: 30px;
+}
+.shape-tf {
+  transition: width 1s, height 1s, transform 1s;
+}
+.shape-tf:hover {
+  width: 30px;
+  height: 30px;
+  transform: rotate(180deg);
+}
+
+.anim-inf {
+    animation-iteration-count: infinite;
+}
+.anim-st {
+  animation-name: animate;
+  animation-duration: 4s;
+}
+@keyframes animate {
+  from {
+    background-color: red;
+  } to {
+    background-color: yellow;
+  }
+}
+
+.anim-rb {
+  animation-name: animate-rainbow;
+  animation-duration: 2s;
+}
+@keyframes animate-rainbow {
+  0% {background-color: red}
+  25% {background-color: yellow}
+  50% {background-color: blue}
+  75% {background-color: orange}
+  100% {background-color: green}
+}
+
+.anim-crc {
+  position: relative;
+  animation-name: animate-circle;
+  animation-duration: 3s;
+}
+.anim-crc-rev {
+  animation-direction: reverse;
+}
+
+.anim-crc-alt {
+  animation-direction: alternate;
+}
+@keyframes animate-circle {
+  0%   {background-color: green;
+        left: 0px;
+        top: 0px;
+        transform: rotate(0deg);}
+  25%  {background-color: yellow;
+        left: 200px;
+        top: 0px;
+        transform: rotate(90deg);}
+  50%  {background-color: blue;
+        left: 200px;
+        top: 200px;
+        transform: rotate(180deg);}
+  75%  {background-color: red;
+        left: 0px;
+        top: 200px;
+        transform: rotate(270deg);}
+  100% {background-color: green;
+        left: 0px;
+        top: 0px;
+        transform: rotate(360deg);}
+}
+
+.anim-mv {
+  animation: mymove 5s 1;
+  position: relative;
+}
+.anim-linear {
+    animation-timing-function: linear;
+}
+.anim-ease {
+  animation-timing-function: ease;
+}
+.anim-ease-in {
+  animation-timing-function: ease-in;
+}
+.anim-ease-out {
+  animation-timing-function: ease-out;
+}
+.anim-ease-in-out {
+  animation-timing-function: ease-in-out;
+}
+@keyframes mymove {
+  from {
+    left: 0px;
+  } to {
+    left: 300px;
+  }
+}
+
+.anim-forw {
+  position: relative;
+  animation-name: forwards;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+@keyframes forwards {
+  from {
+    top: 0px;
+  } to {
+    top: 200px;
+    background-color: red;
+  }
+}

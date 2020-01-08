@@ -1,0 +1,49 @@
+/* dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+.dropdown:hover .dropdown-content{
+  display: block;
+}
+
+/* attribute-selector */
+.selector a[target] {
+  background-color: orange;
+}
+.selector a[target=_blank] {
+  background-color: yellow;
+}
+
+[title~=flower] {
+  background-color: red;
+}
+
+
+input[type=text] {
+  width: 130px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #777;
+  border-radius: 4px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  outline: none;
+}
+input[type=text]:focus {
+  border: 2px solid #111;
+  width: 50%;
+}
+
+
+
